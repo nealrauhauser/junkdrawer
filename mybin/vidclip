@@ -1,0 +1,7 @@
+#!/bin/bash
+ffmpeg -i $1 -ss 00:00:05 -to 00:00:08 -c:v libx264 -c:a aac clip-$1
+
+
+#ffmpeg -ss 00:00:06.500 -i input.mp4 -to 00:00:08.200 -c:v copy -c:a copy output.mp4
+
+

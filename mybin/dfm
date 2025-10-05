@@ -1,0 +1,6 @@
+#!/bin/bash
+df -m | grep -v "snap" | grep -v "tmpfs" | grep -v "udev"
+if test -f "/usr/sbin/zfs"; then
+	zfs list
+	zfs list -t snap
+fi

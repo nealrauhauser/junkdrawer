@@ -1,0 +1,3 @@
+git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm 
+cp /usr/local/bin/tmux.conf ~/.tmux.conf
+tmux source-file ~/.tmux.conf

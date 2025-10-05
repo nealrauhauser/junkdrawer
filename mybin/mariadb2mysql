@@ -1,0 +1,9 @@
+sed -e 's/ENGINE=Aria/ENGINE=InnoDB/g' \
+    -e 's/ROW_FORMAT=PAGE//g' \
+    -e 's/CHARSET=utf8mb4_0900_ai_ci/CHARSET=utf8mb4/g' \
+    -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/g' \
+    -e 's/ALGORITHM=UNDEFINED/ALGORITHM=MERGE/g' \
+    -e 's/STATS_PERSISTENT=0//g' \
+    -e 's/STATS_AUTO_RECALC=0//g' \
+    -e 's/LOCK=NONE//g' \
+    $1.sql > $2.sql

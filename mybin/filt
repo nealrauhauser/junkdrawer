@@ -1,0 +1,15 @@
+tshark -i $1 -f "not icmp6 and not arp and not stp and not igmp and \
+(ether[0] != 0x01 or ether[1] != 0x80 or ether[2] != 0xc2 or ether[3] != 0x00 \
+or ether[4] != 0x00 or ether[5] != 0x0e) and not proto 112 \
+and not (port 67 or port 68 or port 546 or port 547) \
+and not (udp and dst host 239.192.152.143 and dst port 17500) \
+and not udp port 32768 and not ether proto 0x01ff \
+and not (icmp6 and ip6[40] == 130) \
+and not host 104.2.27.169"
+
+#not udp and not icmp and not tcp and \
+
+
+# port 32768 and proto 0x01ff are Nortel shite
+
+

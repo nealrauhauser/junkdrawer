@@ -1,0 +1,3 @@
+#!/bin/bash
+FILE=`echo $1 | awk -F ".docx" {'print $1'}`
+python -m docx2md $FILE.docx $FILE.md
