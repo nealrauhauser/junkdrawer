@@ -8,13 +8,15 @@ This is a personal "junk drawer" repository for small utility scripts and tools 
 
 ## Repository Structure
 
-- **Root directory**: Contains standalone Python scripts and shell utilities
+- **Root directory**: Contains standalone Python scripts
   - `getWordpressLinks.py` - WordPress post link harvester
+
+- **Dropbox/**: Dropbox-related utilities
   - `dboxls` - Dropbox file listing utility (requires `dropbox` Python package)
   - `dropdeps` - Debian/Ubuntu dependency installer for old Dropbox installs
   - `dropinst` - Dropbox installation script for Linux x86_64
 
-- **mybin/**: Collection of ~35 small utilities and installation scripts
+- **mybin/**: Collection of ~45 small utilities and installation scripts
   - Database migration tools: `mariadb2mysql`, `mysql2sqlite.sh`
   - Installation helpers: `dockinst`, `instclaude`, `ndinst`, `pbxinst`, `podinst`, `tinst`
   - Browser/proxy tools: `pchrome`
@@ -51,4 +53,4 @@ Most utilities in `mybin/` are shell scripts or installation snippets. They typi
 
 ## Security Note
 
-Some scripts contain hardcoded credentials or tokens (e.g., `dboxls` has a Dropbox access token). These should be treated as examples and credentials should be rotated/removed before any production use or public sharing.
+Some scripts contain hardcoded credentials or tokens (e.g., `Dropbox/dboxls` has a Dropbox access token). These should be treated as examples and credentials should be rotated/removed before any production use or public sharing.
