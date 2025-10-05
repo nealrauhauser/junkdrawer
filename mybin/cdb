@@ -1,0 +1,3 @@
+FDATE=`date "+%Y%m%d%H%M%S"`
+#echo $FDATE
+cp '/Users/brain/Library/Application Support/Claude/claude_desktop_config.json' ~/bin/$FDATE.json
