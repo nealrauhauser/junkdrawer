@@ -1,0 +1,19 @@
+#!/bin/bash
+# Once upon a time Debian installs of Dropbox would fuss
+# over lack of these libraries. Hasn't been an issue in 
+# years, but I'm leaving this as a clue in case it matters
+# on other platforms or if someone has an old install
+# they still need to support.
+apt install libglib2.0
+apt install libglapi-mesa
+apt install libxdamage1
+apt install libxcb-glx0
+apt install libxcb-dri2-0
+apt install libxcb-dri3-0
+apt install libxcb-dri4-0
+apt install libxcb-present0
+apt install libxcb-sync1
+apt install libxcb-sync2
+apt install libxcb-sync3
+apt install libxshmfence1
+apt install libxxf86vm1
