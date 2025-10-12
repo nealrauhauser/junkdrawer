@@ -1,0 +1,2 @@
+curl -s http://pinky:1234/v1/models | jq -r '.data[].id'
+
